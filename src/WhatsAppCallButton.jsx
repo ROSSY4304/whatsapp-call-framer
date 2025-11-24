@@ -66,17 +66,18 @@ export default function WhatsAppCallButton({ config = {} }) {
     posStyle.bottom = `${cfg.offsetY}px`;
   }
 
-  const containerStyle = {
-  // REMOVE position, zIndex, and offsets for static display
+ const containerStyle = { 
+  // For static display at top left
   fontFamily:
     "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
   display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  // Optionally add margin or centering styles if needed:
-  // margin: "40px auto",
-  // width: "fit-content", // or  "100%" for full width preview
+  alignItems: "flex-start",      // align button at the top
+  justifyContent: "flex-start",  // align button to the left
+  width: "100%",                 // optional: makes it fill parent width
+  marginTop: "15px",             // optional: space from top edge
+  marginLeft: "18px",            // optional: space from left edge
 };
+
 
 
   const pill = {
