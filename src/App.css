@@ -1,8 +1,15 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 ;
+  padding: 0;
   text-align: center;
+}
+.button-spacing-below {
+  margin-bottom: 40px !important;  /* Forces spacing below button */
+}
+
+.space-above-config {
+  margin-top: 0 !important;        /* Ensures no extra space above configurator */
 }
 
 .logo {

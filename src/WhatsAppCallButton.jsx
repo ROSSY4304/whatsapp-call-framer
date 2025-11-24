@@ -66,17 +66,17 @@ export default function WhatsAppCallButton({ config = {} }) {
     posStyle.bottom = `${cfg.offsetY}px`;
   }
 
- const containerStyle = { 
-  // For static display at top left
+ const containerStyle = {
   fontFamily:
     "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
   display: "flex",
-  alignItems: "flex-start",      // align button at the top
-  justifyContent: "flex-start",  // align button to the left
-  width: "100%",                 // optional: makes it fill parent width
-  marginTop: "15px",             // optional: space from top edge
-  marginLeft: "18px",            // optional: space from left edge
+  alignItems: "flex-start",
+  justifyContent: "flex-start",
+  width: "100%",
+  margin: "0px",
+  padding: "0px",
 };
+
 
 
 
