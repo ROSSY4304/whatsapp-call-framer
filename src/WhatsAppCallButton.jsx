@@ -67,17 +67,17 @@ export default function WhatsAppCallButton({ config = {} }) {
   }
 
   const containerStyle = {
-    position: "fixed",
-    ...posStyle,
-    zIndex: cfg.zIndex,
-    fontFamily:
-      "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
-    pointerEvents: "auto",
-    // make sure the widget doesn't block underlying inputs when it's not being interacted with:
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
+  // REMOVE position, zIndex, and offsets for static display
+  fontFamily:
+    "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  // Optionally add margin or centering styles if needed:
+  // margin: "40px auto",
+  // width: "fit-content", // or  "100%" for full width preview
+};
+
 
   const pill = {
     display: "inline-flex",
